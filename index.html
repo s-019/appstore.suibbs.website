@@ -13,9 +13,24 @@
              <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons" mdui-drawer="{target: '#left-drawer'}">menu</i></a>
              <span class="mdui-typo-title">随囧应用商店</span> 
 				<div class="mdui-toolbar-spacer"></div>
-               <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
-               <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a> 
-			</div> 
+               <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons"></i></a>
+               <a href="javascript:;" mdui-menu="{target: '#example-attr'}" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a> 
+    	<ul class="mdui-menu" id="example-attr">
+        <li class="mdui-menu-item">
+        <a href="javascript:;" mdui-dialog="{target: '#about'}" class="mdui-ripple">关于商店</a>
+         </li>
+        </ul>
+        <div class="mdui-dialog" id="about">
+        <div class="mdui-dialog-title">关于商店</div>
+        <div class="mdui-dialog-content">
+        <div class="mdui-typo">
+        <p>项目开启时间：2020.12/12 </p>
+        <p>商店维护，审核和应用开发由随囧一人完成</p>
+        <p>感谢大家支持！</p>
+        </div>
+        </div>
+         </div>
+         </div> 
          <div class="mdui-typo">
          <a href="/zone/zone-1"><div class="mdui-card"><div class="mdui-card-media"><img src="https://t2.img.pet/2021/10/30/1635573076980a6436832da5b7156.png"/><div class="mdui-card-media-covered"><div class="mdui-card-primary"><div class="mdui-card-primary-title">新随囧应用商店专区</div><div class="mdui-card-primary-subtitle">欢迎上传应用在这里哦🌚</div></div></div></div></div></a>
 		</div>
@@ -117,4 +132,5 @@
 <a href="https://wj.qq.com/s2/9208800/c9e5/"><button class="mdui-btn mdui-ripple mdui-color-blue-accent">表单上传</button></a>
 </div>
 </div>
+<script src="https://AppStore.suibbs.website/jump.js"></script>
 </html>
