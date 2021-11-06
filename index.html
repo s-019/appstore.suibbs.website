@@ -1,16 +1,120 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
-    <title>新-随囧应用商店</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css" integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous"/>
-    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js" integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A" crossorigin="anonymous"></script>
-   </head>
-  <body>
-  <div class="mdui-appbar"><div class="mdui-toolbar mdui-color-light-blue-a400"><a class="mdui-btn" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">&#xe5d2;</i></a><a href="https://appstore.suibbs.website" class="mdui-typo-headline">随囧应用商店</a><div class="mdui-drawer" id="left-drawer"><ul class="mdui-list"><a href="https://appstore.suibbs.website/upload.html"><li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">&#xe2c3;</i><div class="mdui-list-item-content">上传应用</div></li></a><a href="https://lun.suiapps.top/"><li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">&#xe7f1;</i><div class="mdui-list-item-content">商店社区</div></li></a></ul></div></div></div>
-<main>
-<a href="/zone/zone-1"><div class="mdui-card"><div class="mdui-card-media"><img src="https://t2.img.pet/2021/10/30/1635573076980a6436832da5b7156.png"/><div class="mdui-card-media-covered"><div class="mdui-card-primary"><div class="mdui-card-primary-title">新随囧应用商店专区</div><div class="mdui-card-primary-subtitle">欢迎上传应用在这里哦🌚</div></div></div></div></div></a>
-</main>
+<html> 
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"> 
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css" crossorigin="anonymous"> 
+		<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js" crossorigin="anonymous"></script> 
+		<link rel="shortcut icon" href="https://s.pc.qq.com/tousu/img/20211105/1636976_1636111866.jpg" type="image/x-icon"> 
+		<title>随囧应用商店</title> 
+	</head> 
+	<body> 
+	    <div class="mdui-toolbar mdui-color-blue-accent">
+             <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons" mdui-drawer="{target: '#left-drawer'}">menu</i></a>
+             <span class="mdui-typo-title">随囧应用商店</span> 
+				<div class="mdui-toolbar-spacer"></div>
+               <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
+               <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a> 
+			</div> 
+         <div class="mdui-typo">
+         <a href="/zone/zone-1"><div class="mdui-card"><div class="mdui-card-media"><img src="https://t2.img.pet/2021/10/30/1635573076980a6436832da5b7156.png"/><div class="mdui-card-media-covered"><div class="mdui-card-primary"><div class="mdui-card-primary-title">新随囧应用商店专区</div><div class="mdui-card-primary-subtitle">欢迎上传应用在这里哦🌚</div></div></div></div></div></a>
+		</div>
+	</body>
+  <div class="mdui-drawer" id="left-drawer">
+   <ul class="mdui-list" mdui-collapse="{accordion: true}">
+<li class="mdui-collapse-item">
+    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+      <i class="mdui-list-item-icon mdui-icon material-icons">cloud_upload</i>
+      <div class="mdui-list-item-content">上传应用</div>
+      <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+    </div>
+    <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+      <a mdui-dialog="{target: '#E'}"><li class="mdui-list-item mdui-ripple"><i class="mdui-icon material-icons">email</i> 邮箱上传</li></a>
+      <a mdui-dialog="{target: '#Bd'}"><li class="mdui-list-item mdui-ripple"><i class="mdui-icon material-icons">format_paint</i>表单上传</li></a>
+    </ul>
+</li>
+
+<li class="mdui-collapse-item">
+    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+      <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
+      <div class="mdui-list-item-content">商店消息</div>
+      <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+    </div>
+    <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+    <a mdui-dialog="{target: '#公告'}"><li class="mdui-list-item mdui-ripple"><i class="mdui-icon material-icons">wb_incandescent</i>商店公告</li></a>
+    <a mdui-dialog="{target: '#反馈'}"><li class="mdui-list-item mdui-ripple"><i class="mdui-icon material-icons">feedback</i>意见反馈</li></a>
+    </ul>
+</li>
+<li class="mdui-collapse-item">
+    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+      <i class="mdui-list-item-icon mdui-icon material-icons">more</i>
+      <div class="mdui-list-item-content">商店更多</div>
+      <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+    </div>
+    <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+      <a href="https://lun.suiapps.top"><li class="mdui-list-item mdui-ripple"><i class="mdui-icon material-icons">forum</i>商店社区</li></a>
+      <a href="https://appstore.rth1.me/"><li class="mdui-list-item mdui-ripple"><i class="mdui-icon material-icons">file_download</i>下载商店</li></a>
+      <li class="mdui-list-item mdui-ripple"><i class="mdui-icon material-icons">move_to_inbox</i>前端代码</li>
+    </ul>
+</li>
+<li class="mdui-list-item mdui-ripple">
+    <i class="mdui-list-item-icon mdui-icon material-icons">equalizer</i>
+    <div class="mdui-list-item-content">排行榜</div>
+</li>
+</ul>
+  </div>
 </body>
+<div class="mdui-dialog" id="公告">
+  <div class="mdui-dialog-title">商店公告</div>
+  <div class="mdui-dialog-content">
+  <div class="mdui-typo">
+  <small>公告日期：2021.11/05</small>
+  <p>随囧应用商店欢迎你！</p>
+  <p>最近更改：增加一些不错的内容以及重新调整商店内容和界面
+  </p>
+  <p>反馈请点击商店消息，点击反馈建议进行公开反馈建议
+  </p>
+  </div>
+  </div>
+</div>
+
+<div class="mdui-dialog" id="反馈">
+  <div class="mdui-dialog-title">意见反馈</div>
+  <div class="mdui-dialog-content">
+  <iframe src="https://appstore.suibbs.website/feedback.html" frameborder="0" width="100%" height="550px"/>
+  </div>
+</div>
+</div>
+
+<div class="mdui-dialog" id="E">
+  <div class="mdui-dialog-title">使用邮箱上传应用</div>
+  <div class="mdui-dialog-content">
+  <div class="mdui-typo">
+  <small>上传规定：2021.11/06</small>
+  <p>随囧应用商店欢迎你！阅读完后点击下面按钮“邮箱上传”</p>
+  <p><h4>规定：</h4>我们根据国家法律法规来进行审核，违规应用将删除应用，严重的应用禁止上传<br>
+  上传必封内容有：金融，破解版，恶意应用，带辱中国的 分裂国家主权 成人色情 侮辱诽谤国家名人或他人（包括国家公务员）<br>请勿上传他们，上传这些三次将不接受你的上传请求直到你联系我们改新为止（仅一次改新机会）<br> <b>所以要好好上传应用啊！</b></p>
+  <h4>审核&上架完成时间：</h4>
+  <div class="mdui-table-fluid"><table class="mdui-table"><thead><tr><th>审核时间</th><th>上架完成时间</th></tr></thead><tbody><tr><td>星期五六日，节假日</td><td>如此，（1-2天）</td></tr></tbody></table></div>
+</div>
+</div><div class="mdui-dialog-actions">
+<a href="Mailto:Suiappstore@hotmail.com"><button class="mdui-btn mdui-ripple mdui-color-blue-accent">邮箱上传</button></a>
+</div>
+</div>
+
+<div class="mdui-dialog" id="Bd">
+  <div class="mdui-dialog-title">使用表单上传应用</div>
+  <div class="mdui-dialog-content">
+  <div class="mdui-typo">
+  <small>上传规定：2021.11/06</small>
+  <p>随囧应用商店欢迎你！阅读完后点击下面按钮“表单上传”</p>
+  <p><h4>规定：</h4>我们根据国家法律法规来进行审核，违规应用将删除应用，严重的应用禁止上传<br>
+  上传必封内容有：金融，破解版，恶意应用，带辱中国的 分裂国家主权 成人色情 侮辱诽谤国家名人或他人（包括国家公务员）<br>请勿上传他们，上传这些三次将不接受你的上传请求直到你联系我们改新为止（仅一次改新机会）<br> <b>所以要好好上传应用啊！</b></p>
+  <h4>审核&上架完成时间：</h4>
+  <div class="mdui-table-fluid"><table class="mdui-table"><thead><tr><th>审核时间</th><th>上架完成时间</th></tr></thead><tbody><tr><td>星期五六日包括节假日</td><td>审核时间相同（1-2天）</td></tr></tbody></table></div>
+</div>
+</div><div class="mdui-dialog-actions">
+<a href="https://wj.qq.com/s2/9208800/c9e5/"><button class="mdui-btn mdui-ripple mdui-color-blue-accent">表单上传</button></a>
+</div>
+</div>
 </html>
